@@ -1,0 +1,1 @@
+////  XZFlashCardView.swift//  ExamAnki////  Created by zxz on 16/3/31.//  Copyright © 2016年 kongyunpeng. All rights reserved.//import UIKitclass XZFlashCardView: UIView {}

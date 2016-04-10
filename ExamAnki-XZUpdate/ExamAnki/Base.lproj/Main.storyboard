@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hm4-3i-efh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WCl-rd-7VP">
+            <objects>
+                <tabBarController id="Hm4-3i-efh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jb3-5H-NDk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GQF-rR-Asq" kind="relationship" relationship="viewControllers" id="YwO-kN-9H3"/>
+                        <segue destination="hlS-wJ-cEt" kind="relationship" relationship="viewControllers" id="604-E0-7sG"/>
+                        <segue destination="RUD-Ey-vTW" kind="relationship" relationship="viewControllers" id="3Rx-F4-d2m"/>
+                        <segue destination="VUD-2t-eHe" kind="relationship" relationship="viewControllers" id="0It-Kx-lBf"/>
+                        <segue destination="egi-P2-wG8" kind="relationship" relationship="viewControllers" id="6uH-lS-TeU"/>
+                        <segue destination="zKk-Bd-iuG" kind="relationship" relationship="viewControllers" id="p4A-8H-kAn"/>
+                        <segue destination="NQ8-yU-sfc" kind="relationship" relationship="viewControllers" id="sva-nq-ptQ"/>
+                        <segue destination="NvJ-Og-hs1" kind="relationship" relationship="viewControllers" id="5r9-pp-aiG"/>
+                        <segue destination="JPa-ZG-rXV" kind="relationship" relationship="viewControllers" id="UNm-B9-geg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KK4-X9-3Aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="-140"/>
+        </scene>
+        <!--EAWrongTab-->
+        <scene sceneID="CzN-Yy-hcr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAWrongTab" id="hlS-wJ-cEt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wrong" image="Wrong_Tab" id="UqC-wR-Jto"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNH-fs-g7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="320"/>
+        </scene>
+        <!--EAMainTab-->
+        <scene sceneID="pCM-ty-WUB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAMainTab" id="GQF-rR-Asq" userLabel="EAMainTab" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" image="Main_Tab" id="aGl-8i-X9U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqL-E1-y5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764.5" y="320"/>
+        </scene>
+        <!--EABookmarkTab-->
+        <scene sceneID="iWn-WJ-lOi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EABookmarkTab" id="RUD-Ey-vTW" userLabel="EABookmarkTab" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="Bookmark_Tab" id="fKm-6b-5bG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPG-gk-ArZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023.5" y="320"/>
+        </scene>
+        <!--EAFlashTab-->
+        <scene sceneID="2Ka-mc-eE3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAFlashTab" id="VUD-2t-eHe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Flash" image="Card_Tab" id="Xg6-68-Ohv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXO-cV-iBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="320"/>
+        </scene>
+        <!--EAImportTab-->
+        <scene sceneID="fXE-HD-LzW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAImportTab" id="JPa-ZG-rXV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Import" id="n6b-Z3-cYl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSW-DB-ry6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2304.5" y="320"/>
+        </scene>
+        <!--EAShareTab-->
+        <scene sceneID="cKX-gZ-th3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAShare" id="zKk-Bd-iuG" userLabel="EAShareTab" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Share" image="Share_Tab" id="nie-fw-sQc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyQ-an-ygl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816.5" y="390"/>
+        </scene>
+        <!--EACommentTab-->
+        <scene sceneID="YGa-N8-zEY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EACommentTab" id="NvJ-Og-hs1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Comment" image="Comment_Tab" id="i3K-e6-0QF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7P-IB-nAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107" y="390"/>
+        </scene>
+        <!--EAAboutTab-->
+        <scene sceneID="a6a-3L-0U9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAAboutTab" id="NQ8-yU-sfc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="About_Tab" id="Nbi-PF-zlK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pc5-PE-zkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250.5" y="390"/>
+        </scene>
+        <!--EAFeedbackTab-->
+        <scene sceneID="RwL-i4-tCy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EAFeedbackTab" id="egi-P2-wG8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feedback" image="Feedback_Tab" id="1sF-hE-Tl2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGf-dM-0fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.5" y="390"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="About_Tab" width="20" height="20"/>
+        <image name="Bookmark_Tab" width="24" height="24"/>
+        <image name="Card_Tab" width="20" height="20"/>
+        <image name="Comment_Tab" width="20" height="20"/>
+        <image name="Feedback_Tab" width="20" height="20"/>
+        <image name="Main_Tab" width="22" height="22"/>
+        <image name="Share_Tab" width="20" height="20"/>
+        <image name="Wrong_Tab" width="24" height="24"/>
+    </resources>
+</document>

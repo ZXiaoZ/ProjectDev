@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8h7-iI-gNJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的收藏-->
+        <scene sceneID="Cm4-tZ-5Fv">
+            <objects>
+                <viewController id="uh1-zE-3tx" customClass="EABookmarkQuestionVC" customModule="ExamAnki" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nHX-Wy-EKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="7yr-53-7Z0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ae-Ui-bWz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zgm-5t-0kh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="200" restorationIdentifier="BookmarkCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookmarkCell" id="Wvm-WO-JfX" customClass="BookmarkCell" customModule="ExamAnki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wvm-WO-JfX" id="VpO-6H-DkW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaT-eD-8P3">
+                                                    <rect key="frame" x="430" y="7" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="L7L-sW-njv"/>
+                                                        <constraint firstAttribute="width" constant="60" id="qGH-R0-gOD"/>
+                                                    </constraints>
+                                                    <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                                    <state key="normal" title="重做"/>
+                                                    <connections>
+                                                        <action selector="doAgain:" destination="uh1-zE-3tx" eventType="touchUpInside" id="uOi-Lx-pvW"/>
+                                                        <segue destination="WfZ-zp-6DB" kind="show" identifier="Redo" id="iPe-Ka-VyO"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-s8-yyp">
+                                                    <rect key="frame" x="510" y="7" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="BX3-lS-vip"/>
+                                                        <constraint firstAttribute="height" constant="30" id="PHg-Ke-6tI"/>
+                                                    </constraints>
+                                                    <state key="normal" title="浏览"/>
+                                                    <connections>
+                                                        <action selector="lookThrough:" destination="uh1-zE-3tx" eventType="touchUpInside" id="5qB-w1-xWo"/>
+                                                        <segue destination="K6n-wR-bXs" kind="show" identifier="LookThrough" id="MYQ-Bo-MwX"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ1-AZ-Bk6">
+                                                    <rect key="frame" x="30" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QQ1-AZ-Bk6" firstAttribute="leading" secondItem="VpO-6H-DkW" secondAttribute="leading" constant="30" id="Jg2-39-Iwh"/>
+                                                <constraint firstItem="NaT-eD-8P3" firstAttribute="centerY" secondItem="VpO-6H-DkW" secondAttribute="centerY" id="OS3-sw-caa"/>
+                                                <constraint firstItem="QQ1-AZ-Bk6" firstAttribute="leading" secondItem="VpO-6H-DkW" secondAttribute="leading" constant="50" id="PRf-Ys-zVO"/>
+                                                <constraint firstItem="l1p-s8-yyp" firstAttribute="leading" secondItem="NaT-eD-8P3" secondAttribute="trailing" constant="20" id="cu2-kt-de5"/>
+                                                <constraint firstItem="l1p-s8-yyp" firstAttribute="centerY" secondItem="VpO-6H-DkW" secondAttribute="centerY" id="dM6-yC-Ihh"/>
+                                                <constraint firstAttribute="trailing" secondItem="l1p-s8-yyp" secondAttribute="trailing" constant="30" id="hA8-HH-mIN"/>
+                                                <constraint firstItem="QQ1-AZ-Bk6" firstAttribute="centerY" secondItem="VpO-6H-DkW" secondAttribute="centerY" id="iCZ-Ri-IPy"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="PRf-Ys-zVO"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookStyleLabel" destination="QQ1-AZ-Bk6" id="lMH-s9-DWF"/>
+                                            <outlet property="doAgain" destination="NaT-eD-8P3" id="BUf-JR-XbH"/>
+                                            <outlet property="haveALook" destination="l1p-s8-yyp" id="6i9-G7-x8M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uh1-zE-3tx" id="aCK-4G-UfN"/>
+                                    <outlet property="delegate" destination="uh1-zE-3tx" id="HAM-ms-gj3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zgm-5t-0kh" firstAttribute="top" secondItem="2Ae-Ui-bWz" secondAttribute="top" id="0dd-fY-IET"/>
+                            <constraint firstItem="Zgm-5t-0kh" firstAttribute="top" secondItem="2Ae-Ui-bWz" secondAttribute="topMargin" constant="44" id="ByR-zE-akR"/>
+                            <constraint firstAttribute="trailing" secondItem="Zgm-5t-0kh" secondAttribute="trailing" id="TuG-2E-CIg"/>
+                            <constraint firstItem="Zgm-5t-0kh" firstAttribute="leading" secondItem="2Ae-Ui-bWz" secondAttribute="leading" id="fe8-bm-T0K"/>
+                            <constraint firstItem="7yr-53-7Z0" firstAttribute="top" secondItem="Zgm-5t-0kh" secondAttribute="bottom" id="ylh-tt-wG3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ByR-zE-akR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的收藏" id="JDj-ZO-Yy8"/>
+                    <connections>
+                        <outlet property="bookTableView" destination="Zgm-5t-0kh" id="Gwc-9I-2M8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOx-Xt-nmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3329" y="130"/>
+        </scene>
+        <!--Look ThroughVC-->
+        <scene sceneID="Dab-zM-t30">
+            <objects>
+                <viewController id="K6n-wR-bXs" customClass="EALookThroughVC" customModule="ExamAnki" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5uK-lp-AAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fXA-oT-Ngo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ia-5e-bfe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjg-8L-J8Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wca-9I-tji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4040" y="228"/>
+        </scene>
+        <!--RedoVC-->
+        <scene sceneID="Qnc-ul-zYe">
+            <objects>
+                <viewController id="WfZ-zp-6DB" customClass="EARedoVC" customModule="ExamAnki" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xTD-p5-VHP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cgd-Z4-AZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJp-Oy-fgL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eBc-Jy-ePO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goc-sc-mry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3702" y="830"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="8Dy-Xh-LZc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8h7-iI-gNJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="Bookmark_Tab" id="LPx-34-uma"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AYg-ig-eSn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uh1-zE-3tx" kind="relationship" relationship="rootViewController" id="c98-QT-pZ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiy-RF-QgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bookmark_Tab" width="24" height="24"/>
+    </resources>
+</document>

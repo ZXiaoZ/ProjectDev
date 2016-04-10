@@ -1,0 +1,1 @@
+////  XZExtention.swift//  ScrollViewCycle////  Created by zxz on 16/4/2.//  Copyright © 2016年 zxz. All rights reserved.//import Foundationimport UIKitpublic let ScreenWidth: CGFloat = UIScreen.mainScreen().bounds.size.widthpublic let ScreenHeight: CGFloat = UIScreen.mainScreen().bounds.size.heightpublic let ScreenBounds: CGRect = UIScreen.mainScreen().bounds
